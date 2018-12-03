@@ -1,0 +1,310 @@
+<!doctype htmlPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>포트폴리오 4</title>
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/index-4.css" media="all"/>
+
+    <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/index-4.js"></script>
+    
+    <style>
+        @media screen and (max-width:768px) and (min-width:0px){
+            .navbar{
+                position: relative;
+                width:100%;
+                height: 200px;
+                top:100px;
+            }
+            .navbar ul{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+            .navbar li{
+                width:15%;
+                height: 40px;
+            }
+            .sch_f fieldset{
+               margin-top:-20px;
+               margin-left: -10px;
+            }
+            #pop_wrap{
+                visibility: visible;
+            }
+            .banner{
+                margin-top:0;
+                width:100%;
+                left:0;
+            }
+            .best_itm li, .new_itm li{
+                width:48%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--헤더-->
+        <div class="util-menu">
+            <ul id="util-menu">
+                <li class="login_wrap">
+                    <a href="#">Login</a>
+                    <form action="#" method="post" name="log_f" id="log_f">
+                        <fieldset>
+                            <legend class="hide">Login</legend>
+                            <p class="user_id">
+                                    <input type="text" name="user_id" id="user_id"  />
+                                </p>
+                                <p class="user_pw">
+                                    <input type="password" name="user_pw" id="user_pw" />
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="save_id" id="save_id"  class="save_id"/>
+                                    <label for="save_id">save password</label>
+                                </p>
+                                <p class="log_btn">
+                                    <button id="login_btn" alt="로그인 버튼">Login</button>
+                                </p>
+                                <p class="join_btn_wrap">
+                                    <a href="#">Sign up</a>
+                                    <a href="#" class="sch_id_btn">Find ID/Password</a>
+                                </p>
+                                <p class="login_close_btn">
+                                    <button id="close_btn"alt="닫기 버튼">Close</button>
+                                </p>
+                        </fieldset>
+                    </form>
+                </li>
+                <li><a href="#">Sign up</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Order</a></li>
+                <li><a href="#">My Page</a></li>
+            </ul>
+        </div>
+        <div class="logo"><a href="index-4.html">LOGO</a></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="">Best Item</a></li>
+                <li><a href="">New Item</a></li>
+                <li><a href="">Outer</a></li>
+                <li><a href="">Top</a></li>
+                <li><a href="">Pants</a></li>
+                <li><a href="">Skirt</a></li>
+                <li><a href="">Dress</a></li>
+                <li><a href="">Shoes</a></li>
+                <li><a href="">Acc</a></li>
+                <li><a href="#">Notice</a></li>
+                <li><a href="">Questions</a></li>
+                <li>
+                    <div class="sch_f">
+                        <form action="#" method="get" name="sch_f" id="sch_f">
+                            <fieldset>
+                                <legend class="hide">검색폼</legend>
+                                <p>
+                                    <input typt="text" name="keyword" id="keyword" title="검색어입력">
+                                    <button id="sch_btn"></button>
+                                </p>
+                            </fieldset>
+                        </form>
+                </li>
+                
+            </ul>
+        </nav>
+    <!--pop up
+        <div id="pop_wrap">
+            <a href="#"><img src="images/popup.jpg"></a>
+            <div id="pop_wrap_btn">
+            <div id="pop_wrap_close">
+                <p><a href="#">창닫기</a></p>
+            </div>
+            <div id="pop_wrap_close_oneday">
+                <p><a href="#">하루동안 보이지 않기</a></p>
+            </div>
+            </div>
+        </div>-->
+    <!--wrapper-->
+        <section class="wrapper" id="wrapper">
+            <div class="banner">
+                <div class="bxslider">
+                    <div>
+                        <a href="#"><img src="images/banner1.jpg"></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/banner2.jpg"></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/banner3.jpg"></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/banner4.jpg"></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/banner5.jpg"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="best_itm">
+            <h3>Best Item</h3>
+            <ul>
+                <li><a href="">
+                        <img src="images/best_itm.jpg">
+                        <p>Best Item</p>
+                    </a>
+                    <p>Price</p>
+                </li>
+                <li><a href="">
+                        <img src="images/best_itm.jpg">
+                        <p>Best Item</p>
+                    </a>
+                    <p>Price</p>
+                </li>
+                <li><a href="">
+                        <img src="images/best_itm.jpg">
+                        <p>Best Item</p>
+                    </a>
+                    <p>Price</p>
+                </li>
+                <li><a href="">
+                        <img src="images/best_itm.jpg">
+                        <p>Best Item</p>
+                    </a>
+                    <p>Price</p>
+                </li>
+                <li><a href="">
+                        <img src="images/best_itm.jpg">
+                        <p>Best Item</p>
+                    </a>
+                    <p>Price</p>
+                </li>
+                <li><a href="">
+                        <img src="images/best_itm.jpg">
+                        <p>Best Item</p>
+                    </a>
+                    <p>Price</p>
+                </li>
+                <li><a href="">
+                        <img src="images/best_itm.jpg">
+                        <p>Best Item</p>
+                    </a>
+                    <p>Price</p>
+                </li>
+                <li><a href="">
+                        <img src="images/best_itm.jpg">
+                        <p>Best Item</p>
+                    </a>
+                    <p>Price</p>
+                </li>
+                <li><a href="">
+                        <img src="images/best_itm.jpg">
+                        <p>Best Item</p>
+                    </a>
+                    <p>Price</p>
+                </li>
+                <li><a href="">
+                        <img src="images/best_itm.jpg">
+                        <p>Best Item</p>
+                    </a>
+                    <p>Price</p>
+                </li>
+                <li><a href="">
+                        <img src="images/best_itm.jpg">
+                        <p>Best Item</p>
+                    </a>
+                    <p>Price</p>
+                </li>
+                <li><a href="">
+                        <img src="images/best_itm.jpg">
+                        <p>Best Item</p>
+                    </a>
+                    <p>Price</p>
+                </li>
+            </ul>
+        </section>
+        <section class="new_itm">
+            <h3>New Item</h3>
+            <ul>
+                    <li><a href="">
+                        <img src="images/new_itm.jpg">
+                            <p>New Item</p>
+                        </a>
+                        <p>Price</p>
+                    </li>
+                    <li><a href="">
+                            <img src="images/new_itm.jpg">
+                            <p>New Item</p>
+                        </a>
+                        <p>Price</p>
+                    </li>
+                    <li><a href="">
+                            <img src="images/new_itm.jpg">
+                            <p>New Item</p>
+                        </a>
+                        <p>Price</p>
+                    </li>
+                    <li><a href="">
+                            <img src="images/new_itm.jpg">
+                            <p>New Item</p>
+                        </a>
+                        <p>Price</p>
+                    </li>
+                    <li><a href="">
+                            <img src="images/new_itm.jpg">
+                            <p>New Item</p>
+                        </a>
+                        <p>Price</p>
+                    </li>
+                    <li><a href="">
+                            <img src="images/new_itm.jpg">
+                            <p>New Item</p>
+                        </a>
+                        <p>Price</p>
+                    </li>
+                    <li><a href="">
+                            <img src="images/new_itm.jpg">
+                            <p>New Item</p>
+                        </a>
+                        <p>Price</p>
+                    </li>
+                    <li><a href="">
+                            <img src="images/new_itm.jpg">
+                            <p>New Item</p>
+                        </a>
+                        <p>Price</p>
+                    </li>
+                    <li><a href="">
+                            <img src="images/new_itm.jpg">
+                            <p>New Item</p>
+                        </a>
+                        <p>Price</p>
+                    </li>
+                    <li><a href="">
+                            <img src="images/new_itm.jpg">
+                            <p>New Item</p>
+                        </a>
+                        <p>Price</p>
+                    </li>
+                    <li><a href="">
+                            <img src="images/new_itm.jpg">
+                            <p>New Item</p>
+                        </a>
+                        <p>Price</p>
+                    </li>
+                    <li><a href="">
+                            <img src="images/new_itm.jpg">
+                            <p>New Item</p>
+                        </a>
+                        <p>Price</p>
+                    </li>
+                </ul>
+        </section>
+    <footer class="footer">
+        <p>Company Informations</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!doctype html>
+<html lan="ko-KR">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compitable" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>포트폴리오 5</title>
+        
+        <link rel="stylesheet" type="text/css" href="css/index-5.css" media="all"/>
+        <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+
+
+        <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+        <script type="text/javascript" src="js/jquery.parallax-scroll.min.js"></script>
+        <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+        <script type="text/javascript" src="js/index-5.js"></script>
+        
+        <style>
+        @media screen and (min-width:768px ){
+            .tablet_gnb_wrap{
+                display: none;
+            }
+            .mob_gnb_wrap{
+                display:none;
+            }
+        }
+        @media screen and (min-width:425px) and (max-width:765px){
+            .tablet_gnb_wrap{
+                display:block;
+            }
+            .mob_gnb_wrap{
+                display: block;
+            }
+            #top_gnb_wrap{
+                display: none;
+            }
+            .floating{
+                display:none;
+            }
+        }
+        @media screen and (min-width: 0px) and (max-width:424px){
+            #top_gnb_wrap{
+                display: none;
+            }
+            .floating{
+                display: none;
+            }
+        }
+        </style>
+
+
+    </head>
+    <body>
+        <div class="wrapper">
+            <!--태블릿-->
+            <div class="tablet_gnb_wrap">
+                <div class="tablet_gnb_inner">
+                <h1 class="tablet_logo"><a href="#">Logo</a></h1>
+                <nav class="tablet_gnb_sep">
+                    <ul>
+                        <li class="tablet_gnb01"><a href="#">My Page</a></li>
+                        <li class="tablet_gnb02"><a href="#">Menu</a></li>
+                    </ul>
+                </nav>
+                </div>
+            </div>
+            <!--모바일-->
+            <div class="mob_gnb_wrap">
+                <div class="mob_gnb_wrap_inner">
+                    <aside class="gnb_close_btn"><a href="#" title="메뉴닫기" role="button">Close</a></aside>
+                </div>
+                <div class="mob_gnb_search">
+                    <div class="mob_gnb_search_inner">
+                        <label for="search" class="hide">Search text</label>
+                        <input type="text" id="search" name="search">
+                        <a href="#" class="mob_gnb_search_btn" title="검색">Search</a>
+                    </div>
+                </div>
+                <div class="mob_gnb_menu_wrap">
+                <nav class="mob_gnb_menu">
+                    <ul>
+                        <li class="mob_gnb_menu1">
+                            <a href="#" role="button"><p>Menu1</p></a>
+                            <ul id="mob_gnb_menu1_sub" class="hide">
+                                <li><a href="#">Sub-Menu1</a>
+                                    <ul id="mob_gnb_menu1_sub1" class="hide">
+                                        <li><a href="#">sub1</a></li>
+                                        <li><a href="#">sub2</a></li>
+                                        <li><a href="#">sub4</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Sub-Menu2</a>
+                                    <ul class="hide">
+                                        <li><a href="#">sub1</a></li>
+                                        <li><a href="#">sub2</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Sub-Menu3</a>
+                                    <ul class="hide">
+                                        <li><a href="#">sub1</a></li>
+                                        <li><a href="#">sub2</a></li>
+                                        <li><a href="#">sub3</a></li>
+                                        <li><a href="#">sub4</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mob_gnb_menu2">
+                            <a href="#" role="button">
+                                <p>Menu2</p>
+                                </a>
+                            <ul class="hide">
+                                <li><a href="#">Sub-Menu1</a></li>
+                                <li>
+                                    <a href="#">Sub-Menu2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mob_gnb_menu3">
+                            <a href="#" role="button"><p>Menu3</p></a>
+                            <ul class="hide">
+                                <li><a href="#">Sub-Menu1</a></li>
+                                <li><a href="#">Sub-Menu2</a></li>
+                                <li><a href="#">Sub-Menu3</a></li>
+                            </ul>
+                        </li>
+                        <li class="mob_gnb_menu4">
+                            <a href="#" role="button"><p>Menu4</p></a>
+                            <ul class="hide">
+                                <li><a href="#">Sub-Menu1</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            </div>
+            <div id="top_gnb_wrap">
+                <div id="gnb">
+                    <div class="sub_gnb_wrap">
+                        <div class="sub_gnb_inner">
+                            <h1 class="logo"><a href="#" title="logo">Logo</a></h1>
+                            <nav class="util-menu">
+                                <ul>
+                                    <li class="util-menu01"><a href="#">Login</a></li>
+                                    <li class="util-menu02"><a href="#">My Page</a></li>
+                                    <li class="util-menu03"><a href="#">Service</a></li>
+                                </ul>
+                                <p class="util_search">
+                                    <label class="hide">Search</label>
+                                    <input id="totalsearch" type="text" >
+                                    <a href="#"><img src="images/search_btn.png"></a>
+                                </p>
+                            </nav>
+                            
+                        </div>
+                        <nav class="sub_gnb_nav">
+                            <div class="sub_gnb_nav_inner">
+                                <ul id="nav_menu">
+                                    <li id="nav_menu1"><a href="#">Menu1</a>
+                                            <ul id="menu1" style="display: none">    
+                                                <li id="menu1_sub1"><a href="#">sub menu1</a>
+                                                    <ul id="menu1_sub1_sub">
+                                                        <li><a href="#">sub1</a></li>
+                                                        <li><a href="#">sub2</a></li>
+                                                        <li><a href="#">sub3</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li id="menu1_sub2"><a href="#">sub menu2</a>
+                                                    <ul id="menu1_sub2_sub">
+                                                        <li><a href="#">sub1</a></li>
+                                                        <li><a href="#">sub2</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li id="menu1_sub3"><a href="#">sub menu3</a>
+                                                    <ul id="menu1_sub3_sub">
+                                                        <li><a href="#">sub1</a></li>
+                                                        <li><a href="#">sub2</a></li>
+                                                        <li><a href="#">sub3</a></li>
+                                                        <li><a href="#">sub4</a></li>
+                                                    </ul></li>
+                                            </ul>
+                                    
+                                    </li>
+                                    <li id="nav_menu2"><a href="#">Menu2</a>
+                                            <ul id="menu2" style="display: none">
+                                                <li id="menu2_sub1"><a href="#">sub menu1</a></li>
+                                                <li id="menu2_sub2"><a href="#">sub menu2</a>
+                                                <ul id="menu2_sub2_sub">
+                                                    <li><a href="#">sub1</a></li>
+                                                    <li><a href="#">sub2</a></li>
+                                                </ul></li>
+                                                <li id="menu2_sub3"><a href="#">sub menu3</a>
+                                                    <ul id="menu2_sub3_sub">
+                                                        <li><a href="#">sub1</a></li>
+                                                        <li><a href="#">sub2</a></li>
+                                                        <li><a href="#">sub3</a></li>
+                                                    </ul>    
+                                                </li>
+                                                <li id="menu2_sub4"><a href="#">sub meu4</a>
+                                                    <ul id="menu2_sub4_sub">
+                                                        <li><a href="#">sub1</a></li>
+                                                        <li><a href="#">sub2</a></li>
+                                                        <li><a href="#">sub3</a></li>
+                                                        <li><a href="#">sub4</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                    </li>
+                                    <li id="nav_menu3"><a href="#">Menu3</a>
+                                            <ul id="menu3" style="display: none">
+                                                <li id="menu3_sub1"><a href="#">sub menu1</a>
+                                                    <ul id="menu3_sub1_sub">
+                                                        <li><a href="#">sub1</a></li>
+                                                        <li><a href="#">sub2</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li id="menu3_sub2"><a href="#">sub menu2</a>
+                                                    <ul id="menu3_sub2_sub">
+                                                        <li><a href="#">sub1</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li id="menu3_sub3"><a href="#">sub menu3</a>
+                                                    <ul id="menu3_sub3_sub">
+                                                        <li><a href="#">sub1</a></li>
+                                                        <li><a href="#">sub2</a></li>
+                                                        <li><a href="#">sub3</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                    </li>
+                                    <li id="nav_menu4"><a href="#">Menu4</a>
+                                            <ul id="menu4" style="display: none">
+                                                <li id="menu4_sub1"><a href="#">sub menu1</a>
+                                                    <ul id="menu4_sub1_sub">
+                                                        <li><a href="#">sub1</a></li>
+                                                        <li><a href="#">sub2</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li id="menu4_sub2"><a href="#">sub menu2</a>
+                                                    <ul id="menu4_sub2_sub">
+                                                        <li><a href="#">sub1</a></li>
+                                                        <li><a href="#">sub2</a></li>
+                                                        <li><a href="#">sub3</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li id="menu4_sub3"><a href="#">sub menu3</a>
+                                                    <ul id="menu4_sub3_sub">
+                                                        <li><a href="#">sub1</a></li>
+                                                        <li><a href="#">sub2</a></li>
+                                                        <li><a href="#">sub3</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!--빈공간-->
+            <div id="empty">
+
+            </div>
+            <!--메인-->
+            <div class="topWrap">
+                <div class="topWrap_inner">
+                    <a href="#"><p class="topWrap_btn" style="opacity: 1">Button</p></a>
+                </div>
+                <div class="floating">
+                    <p>floating</p>
+                </div>
+            </div>
+            <section class="notice">
+                <div class="notice_left">
+                    <p>Notice Left</p>
+                </div>
+                <div class="notice_right">
+                        <p>Notice Right
+                            <a href=""><img src="images/arrow_down_btn.png" role="button"></a>
+                        </p>
+                </div>
+            </section>
+            <section class="notice_right_banner hide">
+                <div class="wrapper">
+                    <div class="banner">
+                        <div class="bxslider">
+                            <div><img src="images/banner1.jpg"></div>
+                            <div><img src="images/banner2.jpg"></div>
+                            <div><img src="images/banner3.jpg"></div>
+                            <div><img src="images/banner4.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="wrap">
+                <div id="parallax1" class="bg-holder" data-width="1280" data-height="860">
+                    <section id="p1">
+                        <h3>Main Copywrite</h3>
+                        <p>Sub Copywrite</p>
+                    </section>
+                </div>
+                <div id="parallax2" class="bg-holder" data-width="1280" data-height="860">
+                    <section id="p2">
+                        <h3>Main Copywrite</h3>
+                        <p>Sub Copywrite</p>
+                    </section>
+                </div>
+            </div>
+            <footer class="footer">
+                <p>Company Informations</p>
+                <small>Extra Informations</small>
+            </footer>
+        </div>
+    </body>
+</html>

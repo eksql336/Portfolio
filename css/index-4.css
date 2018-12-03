@@ -1,0 +1,238 @@
+body{
+    width:100%;
+    margin: 0; 
+}
+/*유틸메뉴*/
+.util-menu{
+    position: absolute;
+    width:fit-content;
+    right:0;
+}
+.util-menu a, .util-menu a:visited{
+    color: black;
+}
+.util-menu a:hover{
+    color:#aaa;
+}
+#util-menu{
+    display: flex; 
+}
+#util-menu li{
+    margin-right:25px;
+}
+#log_f{
+    position: absolute;
+    top:-500px;
+    background-color: #fff;
+    z-index: ;
+}
+#log_f fieldset{
+    width:240px;
+}
+.user_id{
+    margin-bottom:4px;
+}
+.user_pw{
+    margin-top:0;
+}
+.log_btn{
+    margin:0;
+    position: absolute;
+    left:200px;
+    top:25px;
+}
+#login_btn{
+    width:50px;
+    height: 50px;
+    background-color: #444;
+    color:#fff;
+}
+#login_btn:hover{
+    background-color:#aaa; 
+}
+.join_btn_wrap{
+    font-size: 0.8em;
+}
+.sch_id_btn{
+    margin-left: 10px;
+}
+.login_close_btn{
+    margin: 0;
+    position: absolute;
+    left:200px;
+    top:125px;
+}
+#close_btn{
+    background-color: #444;
+    color:#fff;
+}
+#close_btn:hover{
+    background-color:#aaa; 
+}
+.logo{
+    position: relative;
+    left:50%;
+    top:100px;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 3em;
+    font-weight: 500;
+    height:150px;
+}
+.logo a, .logo a:visited{
+    color:#000;
+}
+.navbar{
+    position: relative;
+    left:0;
+    top:150px;
+    width:20%;
+    z-index: 10;
+}
+.line{
+    display: none;
+}
+.navbar a, .navbar a:visited{
+    color: black;
+}
+.navbar a:hover{
+    color: #aaa;
+}
+.sch_f fieldset{
+    margin:0;
+    border:none;
+    position: relative;
+    width:120px;
+    left:-10px;
+}
+.sch_f input{
+    width:80px;
+    height: 20px;
+}
+#sch_btn{
+    position: relative;
+    top:5px;
+    margin:0;
+    width: 20px;
+    height: 20px;
+    background: url('../images/search_btn.png') no-repeat;
+    background-size: 20px 20px;
+}
+/*팝업*/
+#pop_wrap{
+    display: none;
+    margin: 0;
+    position: absolute;
+    width:300px;
+    height: auto;
+    left:100px;
+    top:100px;
+    z-index:30;
+    box-shadow: 0 2px 10px #000;
+    visibility: hidden;
+}
+#pop_wrap_btn{
+    width:100%;
+    display: flex;
+    background: white;
+    font-size: 0.8em;
+    justify-content: flex-end;
+}
+#pop_wrap_close, #pop_wrap_close_oneday{
+    margin-right: 10px
+}
+#pop_wrap_btn a,#pop_wrap_btn a:visited{
+    color:#000;
+}
+/*컨텐츠*/
+.wrapper{
+    position: relative;
+    width:100%;
+}
+/*배너*/
+.banner{
+    position: relative;
+    width:80%;
+    left:19%;
+    margin-top:-150px;
+}
+/*베스트 아이템*/
+.best_itm{
+    position: relative;
+    text-align: center;
+    margin-top:100px;
+}
+.best_itm h3{
+    font-size: 3em;
+}
+.best_itm ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.best_itm li{
+    width:24%;
+}
+.best_itm img{
+    width: 100%;
+}
+.best_itm a,.best_itm a:visited{
+    color:#000;
+}
+.best_itm a>p:hover{
+    color:#aaa;
+}
+/*뉴 아이템*/
+.new_itm{
+    position: relative;
+    text-align: center;
+    margin-top:100px;
+}
+.new_itm h3{
+    font-size: 3em;
+}
+.new_itm ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.new_itm li{
+    width:24%;
+}
+.new_itm img{
+    width: 100%;
+}
+.new_itm a,.new_itm a:visited{
+    color:#000;
+}
+.new_itm a>p:hover{
+    color:#aaa;
+}
+/*푸터*/
+.footer{
+    position: relative;
+    grid-column: 1/8;
+    grid-row: 15/16;
+    text-align: center;
+    background-color:#444;
+    color:#fff;
+}
+ul{
+    list-style: none;
+}
+
+button{
+    border:0;
+    outline: 0;
+    cursor: pointer;
+}
+.hide{
+    display: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width:100%;
+    height: auto;
+}
