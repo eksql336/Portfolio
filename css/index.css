@@ -21,14 +21,14 @@ ul{
 .mobile_gnb_nav{
     position: absolute;
     left: 0;
-    top:80px;
     width:100%;
     font-size: 1.2em;
-    background: rgb(59,50,50);
+    background: rgb(59, 50, 50);
 }
 .mobile_gnb_nav ul{
-    display:flex;
-    justify-content:space-around;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
 }
 .mobile_gnb_nav a, .mobile_gnb_nav a:visited{
     text-decoration: none;
